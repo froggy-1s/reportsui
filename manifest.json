@@ -1,0 +1,42 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"togle4916"
+		]
+	},
+	"header": {
+		"name": "reports.ui",
+		"description": "by togle4916",
+		"uuid": "7700e930-1b1b-483a-ab43-f91fe539523f",
+		"version": [1, 0, 0],
+		"min_engine_version": [1, 16, 0]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "91485bea-826f-4f3b-8d64-db5cd7e243f9",
+			"version": [1, 0, 0]
+		},
+		{
+			"type": "script",
+			"uuid": "26a8e887-9806-458b-a37a-bb1319799fba",
+			"version": [1, 0, 0],
+			"entry" : "scripts/index.js"
+		}
+	],
+"dependencies": [
+		{
+			"module_name": "@minecraft/server",
+			"version": "2.0.0-beta"
+		},
+		{
+			"module_name": "@minecraft/server-ui",
+			"version": "2.0.0-beta"
+		},
+		{
+			"module_name": "@minecraft/server-admin",
+			"version": "1.0.0-beta"
+		}
+	]
+}
