@@ -40,23 +40,28 @@ function showReportsPage(player, page = 0) {
   });
 }
 
-world.beforeEvents.chatSend.subscribe(({ sender, message, cancel }) => {
+world.beforeEvents.chatSend.subscribe((data) => {
+  const { sender, message } = data;
   if (!message.startsWith(config.prefix)) return;
 
-  cancel = true;
+  data.cancel = true; // THIS cancels the message properly
   const [cmdRaw, target, ...reasonParts] = message.trim().split(" ");
   const cmd = cmdRaw.slice(1);
   const reason = reasonParts.join(" ");
-
+  
   if (cmd === "report") {
-    if (!target || !reason) return sender.sendMessage(`§8>> §8Usage:§f ${config.prefix}report §8<§7player§8> §8<§7reason§8>`);
+    if (!target || !reason)
+      return sender.sendMessage(`§8>> §8Usage:§f ${config.prefix}report §8<§7player§8> §8<§7reason§8>`);
 
     const matches = world.getPlayers().filter(p => p.name.toLowerCase().includes(target.toLowerCase()));
-    if (!matches.length) return sender.sendMessage(`§8>> §cNo player matching §f"${target}" §cfound.`);
-    if (matches.length > 1) return sender.sendMessage(`§8>> §cMultiple matches for §f"${target}". Be specific.`);
+    if (!matches.length)
+      return sender.sendMessage(`§8>> §cNo player matching §f"${target}" §cfound.`);
+    if (matches.length > 1)
+      return sender.sendMessage(`§8>> §cMultiple matches for §f"${target}". Be specific.`);
 
     const reportsBySender = reportsDB.entries().map(([_, v]) => JSON.parse(v)).filter(r => r.reporter === sender.name);
-    if (reportsBySender.length >= config.maxReports) return sender.sendMessage(`§8>> §cYou can only submit ${config.maxReports} reports.`);
+    if (reportsBySender.length >= config.maxReports)
+      return sender.sendMessage(`§8>> §cYou can only submit ${config.maxReports} reports.`);
 
     const id = (reportsDB.size() + 1).toString();
     reportsDB.set(id, JSON.stringify({
@@ -71,7 +76,8 @@ world.beforeEvents.chatSend.subscribe(({ sender, message, cancel }) => {
   }
 
   if (cmd === "reports") {
-    if (!sender.hasTag(config.staffTag)) return sender.sendMessage("§8>> §cIncorrect Permissions");
+    if (!sender.hasTag(config.staffTag))
+      return sender.sendMessage("§8>> §cIncorrect Permissions");
     showReportsPage(sender);
   }
 });
