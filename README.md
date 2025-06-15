@@ -1,20 +1,21 @@
-# reportsui
+# ReportsUI
 
 ## Features
 
 - Players can submit reports
-- All reports displayed in GUI [STAFF LOCKED]
-- Customizable Options such as maxreports, prefixes & more.
+- All reports are displayed in a GUI (staff only)
+- Customizable options such as max reports, prefixes, and more
 
 ## Commands
 
-[Using default prefix]
+**Using default prefix (`#`)**
 
-- #report <player> <reason>
-  > Allows players to report anyone within the game, max 2 reports as default.
-- #reports
-  > Opens the gui, displaying all submitted reports. This command is staff locked.
+- `#report <player> <reason>`  
+  → Allows players to report someone in-game (default max: 2 reports)
+
+- `#reports`  
+  → Opens the GUI displaying all submitted reports _(staff only)_
 
 ## Requirements
 
-[Chest Resource Pack](https://github.com/Herobrine643928/Chest-UI/tree/main/RP)
+- [Chest Resource Pack](https://github.com/Herobrine643928/Chest-UI/tree/main/RP)
