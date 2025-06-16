@@ -19,3 +19,5 @@
 ## Requirements
 
 - [Chest Resource Pack](https://github.com/Herobrine643928/Chest-UI/tree/main/RP)
+
+This is for Minecraft Bedrock [MCPE]
