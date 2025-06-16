@@ -42,9 +42,11 @@ function showReportsPage(player, page = 0) {
 function report(sender, target, reason) {
    if (!target || !reason)
       return sender.sendMessage(`§8>> §8Usage:§f ${config.prefix}:report §8<§7player§8> §8<§7reason§8>`);
-
+   if (target.name === sender.name)
+      return sender.sendMessage(`§8>> §cYou cannot report yourself`);
     const reportsBySender = reportsDB.entries().map(([_, v]) => JSON.parse(v)).filter(r => r.reporter === sender.name);
-   
+    if (reportsBySender.length >= config.maxReports)
+      return sender.sendMessage(`§8>> §cYou can only submit ${config.maxReports} reports.`);
 
     const id = (reportsDB.size() + 1).toString();
     reportsDB.set(id, JSON.stringify({
