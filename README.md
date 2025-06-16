@@ -26,4 +26,9 @@ The prefix is fully changeable but must be present unable to have just /report o
 
 Contact **froggy\_.s** on discord.
 
-This is for Minecraft Bedrock [MCPE]
+This is for Minecraft Bedrock [MCPE]!
+
+
+
+![Screenshot 2025-06-16 075112](https://github.com/user-attachments/assets/530706c2-2c42-46ed-9e3f-7999d4499435)
+
