@@ -28,5 +28,7 @@ Contact **froggy\_.s** on discord.
 
 This is for Minecraft Bedrock [MCPE]!
 
-[Screenshot 2025-06-16 075112](https://github.com/user-attachments/assets/f7c622b6-ae82-4da2-bf6c-92fb88c70c52)
+
+
+![Screenshot 2025-06-16 075112](https://github.com/user-attachments/assets/530706c2-2c42-46ed-9e3f-7999d4499435)
 
