@@ -20,6 +20,6 @@ The prefix is fully changeable but must be present unable to have just /report o
 
 ## Requirements
 
-- [Chest Resource Pack](https://github.com/Herobrine643928/Chest-UI/tree/main/RP)
+- [MUST HAVE] [Chest Resource Pack](https://github.com/Herobrine643928/Chest-UI/tree/main/RP)
 
 This is for Minecraft Bedrock [MCPE]
