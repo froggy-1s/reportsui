@@ -10,10 +10,10 @@
 
 **Using default prefix (`#`)**
 
-- `#report <player> <reason>`  
-   Allows players to report someone in-game (default max: 2 reports)
+- **#report <player> <reason> **
+  Allows players to report someone in-game (default max: 2 reports)
 
-- `#reports`  
+- **#reports**  
    Opens the GUI displaying all submitted reports _(staff only)_
 
 ## Requirements
