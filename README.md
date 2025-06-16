@@ -8,13 +8,15 @@
 
 ## Commands
 
-**Using default prefix (`#`)**
+**Using default prefix (`froggy`)**
 
-- `#report <player> <reason>`  
+- `/froggy:report <player> <reason>`  
    Allows players to report someone in-game (default max: 2 reports)
 
-- `#reports`  
+- `/froggy:reports`  
    Opens the GUI displaying all submitted reports _(staff only)_
+
+The prefix is fully changeable but must be present unable to have just /report or /reports.
 
 ## Requirements
 
