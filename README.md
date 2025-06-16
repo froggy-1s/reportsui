@@ -22,4 +22,8 @@ The prefix is fully changeable but must be present unable to have just /report o
 
 - [MUST HAVE] [Chest Resource Pack](https://github.com/Herobrine643928/Chest-UI/tree/main/RP)
 
+## Support
+
+Contact **froggy\_.s** on discord.
+
 This is for Minecraft Bedrock [MCPE]
